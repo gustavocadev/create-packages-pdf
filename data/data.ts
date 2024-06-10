@@ -295,8 +295,18 @@ export const getTablesContent = (): Content => {
       table: {
         body: [
           [
-            { text: headers[0], style: 'tableHeader' },
-            { text: headers[1], style: 'tableHeader' },
+            {
+              text: headers[0],
+              style: 'tableHeader',
+              bold: true,
+              fontSize: 14,
+            },
+            {
+              text: headers[1],
+              style: 'tableHeader',
+              bold: true,
+              fontSize: 14,
+            },
           ],
           subHeaders,
           ...tableBody,
