@@ -1,11 +1,14 @@
 import PdfPrinter from 'pdfmake';
 import fs from 'node:fs';
 import type { TDocumentDefinitions } from 'pdfmake/interfaces';
-import { getTablesContent, headers } from './data/data';
+import { getTablesContent } from './data/data';
 
 const printer = new PdfPrinter({
   Roboto: {
     normal: './fonts/Roboto-Regular.ttf',
+    bold: './fonts/Roboto-Medium.ttf',
+    italics: './fonts/Roboto-Italic.ttf',
+    bolditalics: './fonts/Roboto-MediumItalic.ttf',
   },
 });
 
